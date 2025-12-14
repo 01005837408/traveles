@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:traveles/feature/presentation/widgets/build_text_phone_number.dart';
-import 'package:traveles/feature/presentation/widgets/create_flage_and_text_form_field.dart';
-import 'package:traveles/feature/presentation/widgets/create_next_botton.dart';
+import 'package:traveles/feature/authentaction/presentation/widgets/build_text_phone_number.dart';
+import 'package:traveles/feature/authentaction/presentation/widgets/create_flage_and_text_form_field.dart';
+import 'package:traveles/feature/authentaction/presentation/widgets/create_next_botton.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});

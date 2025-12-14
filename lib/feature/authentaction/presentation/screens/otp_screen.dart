@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:traveles/feature/presentation/widgets/build_pin_code_phone_number.dart';
-import 'package:traveles/feature/presentation/widgets/build_text_verify_phone_number.dart';
-import 'package:traveles/feature/presentation/widgets/build_verify_otp_botton.dart';
+import 'package:traveles/feature/authentaction/presentation/widgets/build_pin_code_phone_number.dart';
+import 'package:traveles/feature/authentaction/presentation/widgets/build_text_verify_phone_number.dart';
+import 'package:traveles/feature/authentaction/presentation/widgets/build_verify_otp_botton.dart';
 
 class OtpScreen extends StatelessWidget {
   const OtpScreen({super.key});
@@ -19,7 +19,7 @@ class OtpScreen extends StatelessWidget {
             ),
             BuildPinCodePhoneNumber(),
             SizedBox(
-              height: 60,
+              height: 30,
             ),
             BuildVerifyOtpBotton(),
           ],

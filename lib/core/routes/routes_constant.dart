@@ -1,4 +1,5 @@
 abstract class ConstantRoutes {
-  static const String login = "LoginScreen";
-  static const String otp = "OtpScreen";
+  static const String login = "login-screen";
+  static const String otp = "otp-screen";
+  static const String mapScreen = "map-screen";
 }

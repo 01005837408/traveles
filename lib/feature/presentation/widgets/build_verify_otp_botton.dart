@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:traveles/core/routes/routes_constant.dart';
 
-class CreateNextBotton extends StatelessWidget {
-  const CreateNextBotton({super.key});
+class BuildVerifyOtpBotton extends StatelessWidget {
+  const BuildVerifyOtpBotton({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return  Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20, ),
       child: Align(
         alignment: Alignment.centerRight,
@@ -22,11 +21,9 @@ class CreateNextBotton extends StatelessWidget {
             ),
             padding: EdgeInsets.symmetric(horizontal: 30, vertical: 12),
           ),
-          onPressed: () {
-            Navigator.pushNamed(context, ConstantRoutes.otp);
-          },
+          onPressed: () {},
           child: Text(
-            "Next",
+            "Verify",
             style: TextStyle(color: Colors.white, fontSize: 18),
           ),
         ),

@@ -10,7 +10,7 @@ class PhoneAuthCubit extends Cubit<PhoneAuthState> {
   PhoneAuthCubit() : super(PhoneAuthInitial());
   Future<void> verifyPhoneNumber(String phoneNumber) async {
     await auth.verifyPhoneNumber(
-      phoneNumber: '+2$phoneNumber',
+      phoneNumber: '+20$phoneNumber',
       timeout: Duration(seconds: 10),
       verificationCompleted: verificationCompleted,
       verificationFailed: verificationFailed,
@@ -61,5 +61,8 @@ class PhoneAuthCubit extends Cubit<PhoneAuthState> {
   User getCurrentUser(){
     User user = auth.currentUser!;
     return user;
+  }
+  Future<void> submitPhoneNumber(String phoneNumber) async {
+    await verifyPhoneNumber(phoneNumber);
   }
 }

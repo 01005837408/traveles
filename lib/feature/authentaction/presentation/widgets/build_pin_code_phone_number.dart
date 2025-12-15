@@ -3,7 +3,8 @@ import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:traveles/core/constant/app_color.dart';
 
 class BuildPinCodePhoneNumber extends StatelessWidget {
-  const BuildPinCodePhoneNumber({super.key});
+    BuildPinCodePhoneNumber({super.key , required this.otpCode});
+  String otpCode ;
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +36,7 @@ class BuildPinCodePhoneNumber extends StatelessWidget {
       enableActiveFill: true,
     
       onCompleted: (code) {
-        // otpCode = code;
+         otpCode = code;
         print("Completed");
       },
       onChanged: (value) {

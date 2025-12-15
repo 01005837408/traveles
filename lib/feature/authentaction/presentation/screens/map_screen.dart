@@ -3,17 +3,13 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:traveles/core/function.dart';
 import 'package:traveles/feature/authentaction/business_logic/cubit/phone_auth_cubit.dart';
 
-class BuildVerifyOtpBotton extends StatelessWidget {
-  const BuildVerifyOtpBotton({super.key, required this.otpCode});
-  final String otpCode;
+class MapScreen extends StatelessWidget {
+  const MapScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(
-        horizontal: 20,
-      ),
-      child: Align(
-        alignment: Alignment.centerRight,
+    return   Scaffold(
+      body: Center(
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
             minimumSize: Size(120, 50),
@@ -28,10 +24,10 @@ class BuildVerifyOtpBotton extends StatelessWidget {
           onPressed: () {
             // BlocProvider.of<PhoneAuthCubit>(context).verifyOtp(otp);
             showProgressIndicator(context);
-            BlocProvider.of<PhoneAuthCubit>(context).submitOtp(otpCode);
+            BlocProvider.of<PhoneAuthCubit>(context).logOut();
           },
           child: Text(
-            "Verify",
+            "Log Out",
             style: TextStyle(color: Colors.white, fontSize: 18),
           ),
         ),

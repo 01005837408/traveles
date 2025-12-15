@@ -21,6 +21,8 @@ class CreateFlageAndTextFormField extends StatelessWidget {
   }
 
   Expanded buildTextFieldPhoneNumber() {
+      TextEditingController phoneController = TextEditingController();
+
     return Expanded(
             flex: 2,
             child: Container(
@@ -30,6 +32,7 @@ class CreateFlageAndTextFormField extends StatelessWidget {
                   borderRadius: BorderRadius.all(Radius.circular(6)),
                 ),
                 child: TextFormField(
+                  controller: phoneController,
                   autofocus: true,
                   keyboardType: TextInputType.phone,
                   validator: (value) {

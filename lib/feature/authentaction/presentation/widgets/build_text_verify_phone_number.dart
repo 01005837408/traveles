@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 
 class BuildTextVerifyPhoneNumber extends StatelessWidget {
   // ignore: prefer_const_constructors_in_immutables
-  BuildTextVerifyPhoneNumber({super.key});
-   final String phoneNumber = " ";
+  BuildTextVerifyPhoneNumber({super.key , required this.phoneNumber});
+   final String phoneNumber ;
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           "Verify your phone number",
@@ -29,7 +30,7 @@ class BuildTextVerifyPhoneNumber extends StatelessWidget {
             ),
             children: <TextSpan>[
               TextSpan(
-                text: phoneNumber,
+                text: " $phoneNumber",
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w500,
